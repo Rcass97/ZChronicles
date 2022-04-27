@@ -10903,7 +10903,7 @@ blockquote {
     #mainNav.is-fixed {
         /* when the user scrolls down, we hide the header right above the viewport */
         position: fixed;
-        top: -83px;
+        top: -130px;
         transition: transform 0.2s;
         border-bottom: 1px solid white;
         background-color: rgba(255, 255, 255, 0.9);
@@ -10942,6 +10942,8 @@ header.masthead {
     background-color: #6c757d;
     background-size: cover;
     background-attachment: scroll;
+    height: 532.4px;
+    width: auto;
 }
 
 header.masthead:before {
@@ -11045,6 +11047,11 @@ header.masthead .post-heading .meta a {
     margin: 0;
     padding: 0.625rem;
     text-align: center;
+}
+@media (min-width: 768px) {
+    .post-preview {
+        margin: 0px 3.063rem !important;
+    }
 }
 
 .post-preview>a {
